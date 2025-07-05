@@ -1,5 +1,5 @@
 /**
- * @name system24
+ * @name system242
  * @description a tui-like discord theme.
  * @author refact0r
  * @version 2.0.0
@@ -23,7 +23,7 @@ body {
     /* sizes */
     --gap: 12px; /* spacing between panels */
     --divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */
-    --border-thickness: 2px; /* thickness of borders around main panels. DOES NOT AFFECT OTHER BORDERS */
+    --border-thickness: 3px; /* thickness of borders around main panels. DOES NOT AFFECT OTHER BORDERS */
     --border-hover-transition: 0.2s ease; /* transition for borders when hovered */
 
     /* animation/transition options */
@@ -58,9 +58,9 @@ body {
 
     /* transparency/blur options */
     /* NOTE: TO USE TRANSPARENCY/BLUR, YOU MUST HAVE TRANSPARENT BG COLORS. FOR EXAMPLE: --bg-4: hsla(220, 15%, 10%, 0.7); */
-    --transparency-tweaks: off; /* off: no changes, on: remove some elements for better transparency */
+    --transparency-tweaks: on; /* off: no changes, on: remove some elements for better transparency */
     --remove-bg-layer: off; /* off: no changes, on: remove the base --bg-3 layer for use with window transparency (WILL OVERRIDE BACKGROUND IMAGE) */
-    --panel-blur: off; /* off: no changes, on: blur the background of panels */
+    --panel-blur: on; /* off: no changes, on: blur the background of panels */
     --blur-amount: 12px; /* amount of blur */
     --bg-floating: var(--bg-3); /* set this to a more opaque color if floating panels look too transparent. only applies if panel blur is on  */
 
@@ -87,26 +87,26 @@ body {
 
     /* text colors */
     --text-0: var(--bg-4); /* text on colored elements */
-    --text-1: oklch(95% 0 0); /* other normally white text */
-    --text-2: oklch(85% 0 0); /* headings and important text */
-    --text-3: oklch(75% 0 0); /* normal text */
-    --text-4: oklch(60% 0 0); /* icon buttons and channels */
+    --text-1: oklch(100% 0 0); /* other normally white text */
+    --text-2: oklch(100% 0 0); /* headings and important text */
+    --text-3: oklch(100% 0 0); /* normal text */
+    --text-4: oklch(75% 0 0); /* icon buttons and channels */
     --text-5: oklch(40% 0 0); /* muted channels/chats and timestamps */
 
     /* background and dark colors */
-    --bg-1: oklch(31% 0 0); /* dark buttons when clicked */
-    --bg-2: oklch(27% 0 0); /* dark buttons */
-    --bg-3: oklch(23% 0 0); /* spacing, secondary elements */
-    --bg-4: oklch(19% 0 0); /* main background color */
-    --hover: oklch(54% 0 0 / 0.1); /* channels and buttons when hovered */
-    --active: oklch(54% 0 0 / 0.2); /* channels and buttons when clicked or selected */
-    --active-2: oklch(54% 0 0 / 0.3); /* extra state for transparent buttons */
-    --message-hover: var(--hover); /* messages when hovered */
+    --bg-1: transparent !important;
+    --bg-2: #3584e4 !important; 
+    --bg-3: rgba(11,23,34,0.5); 
+    --bg-4: rgba(11,23,34,0.75); 
+    --hover: oklch(54% 0 0 / 0.1); 
+    --active: oklch(54% 0 0 / 0.2);
+    --active-2: oklch(54% 0 0 / 0.3);
+    --message-hover: var(--hover);
 
     /* accent colors */
-    --accent-1: var(--purple-1); /* links and other accent text */
-    --accent-2: var(--purple-2); /* small accent elements */
-    --accent-3: var(--purple-3); /* accent buttons */
+    --accent-1: #2867b8; /* links and other accent text */
+    --accent-2: #3584e4; /* small accent elements */
+    --accent-3: #1c4a8c; /* accent buttons */
     --accent-4: var(--purple-4); /* accent buttons when hovered */
     --accent-5: var(--purple-5); /* accent buttons when clicked */
     --accent-new: var(--red-2); /* stuff that's normally red like mute/deafen buttons */
@@ -124,8 +124,8 @@ body {
 
     /* border colors */
     --border-light: var(--hover); /* general light border color */
-    --border: var(--active); /* general normal border color */
-    --border-hover: var(--accent-2); /* border color of panels when hovered */
+    --border: #1c4a8c; /* general normal border color */
+    --border-hover: #3584e4; /* border color of panels when hovered */
     --button-border: hsl(220, 0%, 100%, 0.1); /* neutral border color of buttons */
 
     /* base colors */
